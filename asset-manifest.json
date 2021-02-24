@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/wbs-cookblog/static/css/main.28552e60.chunk.css",
-    "main.js": "/wbs-cookblog/static/js/main.23e3964a.chunk.js",
-    "main.js.map": "/wbs-cookblog/static/js/main.23e3964a.chunk.js.map",
+    "main.js": "/wbs-cookblog/static/js/main.ea219992.chunk.js",
+    "main.js.map": "/wbs-cookblog/static/js/main.ea219992.chunk.js.map",
     "runtime-main.js": "/wbs-cookblog/static/js/runtime-main.8472e1eb.js",
     "runtime-main.js.map": "/wbs-cookblog/static/js/runtime-main.8472e1eb.js.map",
     "static/css/2.150d169a.chunk.css": "/wbs-cookblog/static/css/2.150d169a.chunk.css",
@@ -19,6 +19,6 @@
     "static/css/2.150d169a.chunk.css",
     "static/js/2.21281119.chunk.js",
     "static/css/main.28552e60.chunk.css",
-    "static/js/main.23e3964a.chunk.js"
+    "static/js/main.ea219992.chunk.js"
   ]
 }
