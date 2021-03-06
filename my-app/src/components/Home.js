@@ -37,11 +37,11 @@ export default (props, {onChangeSlug})=>{
         <h2>OurCategories</h2>
         <div className="categories">
         <Link to="/recipes/low_sugar" className="link" onClick={props.onChangeCategory} addFavorites={props.addFavorites}>Low Sugar</Link>
-        <Link to="/recipes/gluten_free" className="link" onClick={props.onChangeCategory}>Gluten Free</Link>
-        <Link to="/recipes/vegan" className="link" onClick={props.onChangeCategory}>Vegan</Link>
-        <Link to="/recipes/lacto_free" className="link" onClick={props.onChangeCategory}>Lacto Free</Link>
-        <Link to="/recipes/pescatarian" className="link" onClick={props.onChangeCategory}>Pescatarian </Link>
-        <Link to="/recipes/vegetarian" className="link" onClick={props.onChangeCategory} >Vegetarian</Link>
+        <Link to="/recipes/gluten_free" className="link" onClick={props.onChangeCategory} addFavorites={props.addFavorites}>Gluten Free</Link>
+        <Link to="/recipes/vegan" className="link" onClick={props.onChangeCategory} addFavorites={props.addFavorites}>Vegan</Link>
+        <Link to="/recipes/lacto_free" className="link" onClick={props.onChangeCategory} addFavorites={props.addFavorites}>Lacto Free</Link>
+        <Link to="/recipes/pescatarian" className="link" onClick={props.onChangeCategory} addFavorites={props.addFavorites}>Pescatarian </Link>
+        <Link to="/recipes/vegetarian" className="link" onClick={props.onChangeCategory} addFavorites={props.addFavorites}>Vegetarian</Link>
         </div>
     </div>
 
