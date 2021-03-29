@@ -1,11 +1,6 @@
 import React from 'react';
-import { Link, useParams } from "react-router-dom"
 import './comp-styles.css';
 import ActualRecipePage from './ActualRecipePage';
-import RecipeCardsCollection from './RecipeCardsCollection';
-import Spinner from './Spinner';
-
-
 
 
 export default function RecipePage({posts}) {
