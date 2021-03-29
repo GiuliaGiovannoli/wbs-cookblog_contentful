@@ -23,11 +23,10 @@ function App() {
   const [category, setCategory]= useState()
   const [favoritePosts, setFavoritePosts]= useState()
   const [favorite, setFavorite]= useState(false)
-   const [slugResult, setSlugResult]= useState()
+  const [slugResult, setSlugResult]= useState()
   const [slug, setSlug]= useState()
   
 // filter through post with same id like click event
-
 
   const chooseCategory=(e)=>{
         setCategory(e.target.text)
@@ -43,12 +42,10 @@ function App() {
           }
         else return prevPost 
       }
-      
     )
     setPosts(newObjArr)
-  
   }
-   
+  
   const chooseSlug=(e)=>{
     console.log(e.target.text)
     setSlug(e.target.text)
@@ -81,14 +78,14 @@ useEffect(()=> {
 },[slug])
 
 return (
-     <>
-     <nav id="four">
+    <>
+    <nav id="four">
       <NavLink ecact to="/"> <img src={Logo}/> </NavLink>
       <NavLink exact to="/" className="link"
       > Home </NavLink>
-       <NavLink  exact to="/recipes"  className="link"
+      <NavLink  exact to="/recipes"  className="link"
       > All Recipes </NavLink>
-       <NavLink
+      <NavLink
         to="/contact"  className="link"
       > Contact</NavLink>
       </nav>
@@ -101,10 +98,10 @@ return (
             <Route path="/recipes/:category" render={(props)=> (categoryResult?  <RecipeCardsCollection {...props} onChangeSlug={chooseSlug} posts={categoryResult} addFavorites={addFavorite} /> : <Spinner />)}/>
             <Route path="/recipes" render={(props) => (posts?  <RecipeCardsCollection {...props} posts={posts} onChangeSlug={chooseSlug} addFavorites={addFavorite}/> : <Spinner />)} />
             <Route exact path="/" render={(props) => posts && <Home  {...props} onChangeCategory={chooseCategory} posts={posts} addFavorites={addFavorite} />}/>
-       
+      
       </Switch>
       <Favorites />
-       <Footer />
+      <Footer />
   </>
   );
 }
